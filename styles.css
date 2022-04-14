@@ -61,9 +61,10 @@ sidebar ul li a{
 sidebar ul li a:hover{
     color: white;
     border-radius: var(--br);
-    background-color: #0084ff;
-
-    box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
+    background-color: #078011;
+    background-image: linear-gradient(45deg, #078011 0%, #057630 100%);
+    
+    box-shadow: 0 5px 10px 2px rgba(43, 255, 10, 0.5);
 }
 
 .profile-card{
@@ -75,6 +76,7 @@ sidebar ul li a:hover{
 .profile-card h2{
     padding: 10px;
     font-size: 35px;
+    text-shadow: #003715;
 }
 
 .profile{
@@ -152,19 +154,19 @@ main .header span{
     margin: 10px 0;
 }
 
-.card .right .progress .fill.fill-20{
+.card .right .progress .fill.fill-55{
     background-color: rgb(255, 56, 21);
-    width: 20%;
-}
-
-.card .right .progress .fill.fill-40{
-    background-color: rgb(255, 189, 21);
     width: 40%;
 }
 
-.card .right .progress .fill.fill-100{
+.card .right .progress .fill.fill-70{
+    background-color: rgb(189, 255, 21);
+    width: 50%;
+}
+
+.card .right .progress .fill.fill-75{
     background-color: rgb(21, 255, 25);
-    width: 100%;
+    width: 75%;
 }
 
 .card .buttons{
@@ -184,5 +186,57 @@ main .header span{
 
 .btn:hover {
     background-color: #0d7526;
-    box-shadow: 0 5px 10px 2px rgba(10, 255, 104, 0.5);
+    box-shadow: 0 5px 10px 2px #0aff6880;
+}
+
+
+@media (max-width: 920px) {
+    body{
+        height: 200vh;
+    }
+
+    .container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    sidebar{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    main{
+        width: 80%;
+    }
+
+    .profile{
+        width: 175px;
+    }
+
+    header{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body{
+        height: 210vh;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        padding-right: 0;
+        padding-top: 10px;
+    }
+
+    .right{
+        padding-bottom: 10px;
+    }
 }
