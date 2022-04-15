@@ -223,7 +223,7 @@ main .header span{
 @media (max-width: 600px) {
 
     body{
-        height: 210vh;
+        height: 215vh;
     }
 
     .content{
@@ -238,5 +238,12 @@ main .header span{
 
     .right{
         padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    body{
+        height: 225vh;
     }
 }
